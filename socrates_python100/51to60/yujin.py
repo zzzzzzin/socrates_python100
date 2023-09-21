@@ -81,4 +81,7 @@ x = ~a
 print(x)
 
 #60
-
+print("두개의 정수를 입력하시오: ")
+a, b = map(int, input().split())
+x = a & b
+print(x)
