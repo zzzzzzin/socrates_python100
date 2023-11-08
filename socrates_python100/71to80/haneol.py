@@ -5,7 +5,7 @@ def pro71():
         if(n==0): break
         else: print(n)
 
-def pro7223443r3r():
+def pro72():
     n=int(input())
     while n>0:
         print(n)
