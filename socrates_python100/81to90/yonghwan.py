@@ -64,3 +64,51 @@ volume = numbers[0]*numbers[1]*numbers[2]/8/1024/1024
 rounded_number = round(volume, 2)
 result = str(rounded_number) + " MB"
 print(result)
+
+# 문제 86번
+n = int(input())
+s=0
+c=1
+while s < n :
+    s= s+c
+    c= c+1
+    if s>=n :
+        break
+print(s)
+
+# 문제 87번
+n = int(input())
+c = 1
+
+while c <= n:
+    if c % 3 != 0:
+        print(c)
+    c = c + 1
+
+# 문제 88번
+x, y, z = input().split()
+a = int(x)
+d = int(y)
+n = int(z)
+print(a+(n-1)*d)
+
+# 문제 89번
+x, y, z = input().split()
+a = int(x)
+r = int(y)
+n = int(z)
+print(a*r**(n-1))
+
+# 문제 90번
+x, y, z, n = input().split()
+a = int(x)
+m = int(y)
+d = int(z)
+n = int(n)
+
+i = 0
+while i < n - 1:
+    a = a * m + d
+    i = i+1
+
+print(a)
