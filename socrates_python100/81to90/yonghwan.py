@@ -36,6 +36,16 @@ input_number = int(input())
 print_numbers(input_number)
 
 # 문제83번
+r, g, b = input().split()
+r = int(r)
+g = int(g)
+b = int(b)
+for i in range(0, r):
+    for j in range(0, g):
+        for k in range(0, b):
+            print(i, j, k)
+
+print(r*g*b)
 
 # 문제84번
 input_numbers=input()
