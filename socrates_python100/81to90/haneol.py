@@ -36,3 +36,28 @@ def pro85():
     result = w*h*b/8/1024/1024
     result = "{:.2f}".format(result)
     print(str(result)+" MB")
+
+def pro86():
+    n = int(input())
+    i = 1
+    sum = 0
+    while True:
+        if sum >= n:
+            print(sum)
+            break
+        else:
+            sum = sum+i
+            i = i+1
+
+def pro87():
+    n = int(input())
+    for i in range(1, n+1) :
+        if i%3==0 :
+            continue           
+        else: print(i, end=' ')  
+
+def pro88():
+    adn = input()
+    a,d,n = map(int, adn.split(' '))
+    sum = d*(n-1)+a
+    print(sum)
