@@ -61,3 +61,10 @@ def pro88():
     a,d,n = map(int, adn.split(' '))
     sum = d*(n-1)+a
     print(sum)
+
+def pro89():
+    arn = input()
+    a,r,n = map(int, arn.split(' '))
+    sum = a * (r**(n-1))
+    print(sum)
+    
